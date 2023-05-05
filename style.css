@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root {
+    --light-pink: #e5d2d8;
+    --orange: #de541e;
+    --dark-pink: #471323;
+    --darkest-pink: #240910;
+}
+.content {
+    margin: 1rem;
+}
+
+.material-symbols-rounded {
+    color: var(--darkest-pink);
+}
+/* ============== ASIDE ============== */
+.main-info,
+.side-info {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 1rem;
+}
+.main-info img {
+    width: 100%;
+}
+.main-info-txt {
+    padding: 0 1rem 1rem 1rem;
+}
+.main-info h1 {
+    text-align: center;
+    color: var(--dark-pink);
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+}
+.personal-info {
+    list-style-type: none;
+}
+.personal-info li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+}
+.skills,
+.courses-list,
+.languages-list {
+    margin-left: 1.7rem;
+}
+.personal-info {
+    line-height: 1.6rem;
+}
+.skills {
+    line-height: 1.5rem;
+}
+.skills li {
+    color: var(--darkest-pink);
+}
+h2 {
+    color: var(--dark-pink);
+}
+.header-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--darkest-pink);
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
+
+footer a {
+    color: var(--orange);
+}
+
+/* ============== SIDE INFO ============== */
+.side-info {
+    padding: 1rem;
+    margin-block: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sm-line-hg {
+    line-height: 1.4rem;
+}
+
+.course {
+    font-size: 1.3rem;
+}
+
+.container-subsection {
+    margin-top: 10px;
+}
+
+.bottom-info {
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 1rem;
+    }
+    .main-info {
+        margin: 0;
+    }
+    .side-info {
+        margin: 0;
+    }
+}
